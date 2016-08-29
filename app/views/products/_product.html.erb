@@ -1,0 +1,18 @@
+<tr id="producto-<%=product.id%>">
+  <td id="name"><%= product.name %></td>
+  <td id="price"><%= product.price %></td>
+  <td><%= link_to 'Show', product %></td>
+  <td>
+    <%= link_to 'Edit',
+                edit_product_path(product),
+                data: { disable_with: 'Wait...' },
+                remote: true %>
+  </td>
+  <td>
+    <%= link_to 'Destroy',
+                product,
+                method: :delete,
+                data: { disable_with: 'Wait...' },
+                remote: true %>
+  </td>
+</tr>

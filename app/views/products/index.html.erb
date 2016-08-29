@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<h1>New Product</h1>
+<div class="col-md-6">
+  <%= render 'form' %>
+</div>
+
+<h1>Listing Products</h1>
+
+<table class="table" id="products">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody class="products">
+    <%= render @products %>
+  </tbody>
+</table>
+
+<br>
+
+<%= render 'modal_edit' %>
